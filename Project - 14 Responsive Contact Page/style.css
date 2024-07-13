@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root{
+    /* font sizes */
+    --big-fnt: 4rem;
+    --head-fnt: 2rem;
+    --body-fnt: 1rem;
+    --label-fnt: 0.875rem;
+    --btn-text: 1.25rem;
+    /* color pallete */
+    --btn-color: #4036A9;
+    --txt-color-1: #111729;
+    --txt-color-2: #CDD5E0;
+    --input-box-bg: #F8FAFC;
+    --btn-bg: #FFFFFF;
+}
+ body{
+    background-image: url(assests/bg-image.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--btn-bg);
+    max-width: 100%;
+    height: 100vh;
+ }
+ .full-site{
+    padding: 1rem 4rem;
+    max-width: 100%;
+ }
+ .heading-container{
+    text-align: center;
+    margin-top: 3rem;
+ }
+ .heading-container h1{
+    font-size: var(--big-fnt);
+ }
+ .heading-container p{
+    font-size: var(--head-fnt);
+    margin-top: 1rem;
+ }
+ .input-boxes {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    width: 60%;
+    height: 700px;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "input1 input2"
+                            "input3 input4"
+                            "input5 input5"
+                            "button button"
+    ;
+    gap: 1rem;
+    margin-top: 5rem;
+ }
+ .input-box1{
+    grid-area: input1;
+ }
+ .input-box1 p{
+   font-size: var(--label-fnt);
+   margin-bottom: 8px;
+ }
+ .input-box1 div{
+    height: 70px;
+    background: rgb(255, 255, 255);
+    color: black;
+    line-height: 35px;
+    padding: 1rem;
+    border-radius: 15px;
+    color: rgba(128, 128, 128, 0.4);
+   font-weight: 600;
+ }
+
+ .input-box2{
+    grid-area: input2;
+ }
+ .input-box2 p{
+   font-size: var(--label-fnt);
+   margin-bottom: 8px;
+ }
+ .input-box2 div{
+   height: 70px;
+    background: rgb(255, 255, 255);
+    color: black;
+    line-height: 35px;
+    padding: 1rem;
+    border-radius: 15px;
+    color: rgba(128, 128, 128, 0.4);
+    font-weight: 600;
+ }
+
+ .input-box3{
+    grid-area: input3;
+ }
+ .input-box3 p{
+   font-size: var(--label-fnt);
+   margin-bottom: 8px;
+ }
+ .input-box3 div{
+   height: 70px;
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 1rem;
+    border-radius: 15px;
+    color: rgba(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+ }
+
+ .input-box4{
+    grid-area: input4;
+ }
+ .input-box4 p{
+   font-size: var(--label-fnt);
+   margin-bottom: 8px;
+ }
+ .input-box4 div{
+   height: 70px;
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 1rem;
+    border-radius: 15px;
+    color: rgba(0, 0, 0);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .input-box5{
+    grid-area: input5;
+ }
+ .input-box5 p{
+   font-size: var(--label-fnt);
+   margin-bottom: 8px;
+ }
+ .input-box5 div {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    color: black;
+    line-height: 35px;
+    padding: 1rem;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: var(--body-fnt);
+ }
+ .p1 {
+   font-weight: 600;
+   font-size: 2rem;
+ }
+
+ .input-box6{
+    grid-area: button;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    color: black;
+    line-height: 35px;
+    padding: 1rem;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: var(--btn-text);
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    font-weight: 700;
+ }
+
+ /* Media queries */
+ @media screen and (max-width: 1280px) {
+   .heading-container{
+      margin-top: 2.75rem;
+   }
+   .input-boxes {
+      width: 70%;
+      gap: 1rem;
+      margin-top: 5rem;
+   }
+ }
+ @media screen and (max-width: 1024px) {
+   .full-site{
+      padding: 1rem 2rem;
+      max-width: 100%;
+   }
+   .heading-container{
+      margin-top: 2.75rem;
+   }
+   .input-boxes {
+      width: 100%;
+      gap: 1rem;
+      margin-top: 5rem;
+      padding: 2rem;
+   }
+   .heading-container h1{
+      font-size: 3rem;
+   }
+   .heading-container p{
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      font-weight: 400;
+   }
+ }
+ @media screen and (max-width: 640px) {
+   .full-site{
+      padding: 1rem 1.5rem;
+      max-width: 100%;
+   }
+   .heading-container{
+      margin-top: 2.5rem;
+   }
+   .heading-container h1{
+      font-size: 2.75rem;
+   }
+   .heading-container p{
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      font-weight: 300;
+   }
+   .input-boxes {
+      width: 100%;
+      height: 800px;
+      margin: auto;
+      padding: 1rem 1rem 5rem 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 4fr 1fr;
+      grid-template-areas: "input1"
+                           "input2"
+                           "input3"
+                           "input4"
+                           "input5"
+                           "button"                     
+      ;
+      gap: 1rem;
+      margin-top: 5rem;
+   }
+ }
